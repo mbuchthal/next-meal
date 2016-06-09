@@ -1,6 +1,7 @@
 const angular = require('angular');
 const nextMeal = angular.module('nextMeal', [require('angular-route')]);
 
+require('./auth')(nextMeal);
 require('./locations')(nextMeal);
 require('./services')(nextMeal);
 
